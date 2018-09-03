@@ -2,7 +2,7 @@ Eight of Cups by Joe Friedlander
 
 Inspired by Alchemy from PopCap Games
 
-Play online here: https://joefriedlander.github.io/eightofcups (Plays Sound)
+Play online here: https://joefriedlander.github.io/eightofcups (Music and sound off by default, can be enabled)
 
 Version 1.0
 
