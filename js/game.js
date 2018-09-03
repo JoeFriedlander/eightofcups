@@ -1993,7 +1993,10 @@ function drawGame() {
 };
 
 //STARTS GAME =================================================================
-tutorialSong.play();
+//April 2018 Chrome disabled autoplay, so set sound and music off by default.
+//https://developers.google.com/web/updates/2017/09/autoplay-policy-changes
+musicAndSound.musicOnOff();
+musicAndSound.soundOnOff();
 board.generateSquareArray();
 tutorial.generateHoldSquareArray();
 requestAnimationFrame(drawGame);
