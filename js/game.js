@@ -1271,6 +1271,10 @@ let background = {
     levelHolder: {1: "data/img/level1.jpg", 2: "data/img/level2.jpg", 3: "data/img/level3.jpg", 4: "data/img/level4.jpg", 5: "data/img/level5.jpg"},
     frameWidth: 8,
     framePadding: 2,
+    woodImg : new Image(),
+    flowerImg : new Image(),
+    levelImg : new Image(),
+
     drawBackground(){
         //shadow behind game and extending outside.
         ctx.fillStyle = "black";
@@ -1281,19 +1285,15 @@ let background = {
         ctx.fillRect(0, 0, gameWidth, gameHeight);
 
         //draws wood image, makes transparent so blends in
-        let woodImg = new Image();
-        woodImg.src = "data/img/wood.jpg";
+        background.woodImg.src = "data/img/wood.jpg";
         ctx.globalAlpha = 0.3;
-        ctx.drawImage(woodImg, 18, 18, gameWidth-30, gameHeight-30);
+        ctx.drawImage(background.woodImg, 18, 18, gameWidth-30, gameHeight-30);
         ctx.globalAlpha = 1;
-        woodImg.src = "data/img/wood.jpg";
 
         //draws flower in bottom left
         //src put before and after for internet explorer compatibility
-        let flowerImg = new Image();
-        flowerImg.src = "data/img/flower.png";
-        ctx.drawImage(flowerImg, 50, 400, 150, 150);
-        flowerImg.src = "data/img/flower.png";
+        background.flowerImg.src = "data/img/flower.png";
+        ctx.drawImage(background.flowerImg, 50, 400, 150, 150);
 
         //logo in top left
         if(!menu.menuActive){
@@ -1362,24 +1362,21 @@ let background = {
     drawImage(){
         //src put before and after for internet explorer compatibility
         if(!tutorial.tutorialActive && !menu.menuActive){
-            let levelImg = new Image();
             if(level.level<level.maxLevel && level.level!==0){
-                levelImg.src = background.levelHolder[level.level];
-                ctx.drawImage(levelImg,
+                background.levelImg.src = background.levelHolder[level.level];
+                ctx.drawImage(background.levelImg,
                             board.squareOffsetLeft,
                             board.squareOffsetTop,
                             board.columnCount*(board.squareSize+board.squarePadding)-board.squarePadding,
                             board.rowCount*(board.squareSize+board.squarePadding)-board.squarePadding);
-                levelImg.src = background.levelHolder[level.level];
             }
             else if(level.level>=level.maxLevel){
-                levelImg.src = background.levelHolder[level.maxLevel];
-                ctx.drawImage(levelImg,
+                background.levelImg.src = background.levelHolder[level.maxLevel];
+                ctx.drawImage(background.levelImg,
                             board.squareOffsetLeft,
                             board.squareOffsetTop,
                             board.columnCount*(board.squareSize+board.squarePadding)-board.squarePadding,
                             board.rowCount*(board.squareSize+board.squarePadding)-board.squarePadding);
-                levelImg.src = background.levelHolder[level.maxLevel];
             }
         }
     },
