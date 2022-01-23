@@ -12,7 +12,7 @@ Pattern matching puzzle game inspired by Alchemy from PopCap Games
 My first completed project.
 
 Todo:
-1. Refactor to use multiple files intead of one big one :slightly_smiling_face: Probably won't do as I'm not planning on updating it often
+1. Refactor to use multiple files instead of one big one :slightly_smiling_face: Probably won't do as I'm not planning on updating it often
 2. Colorblind support, and display credits as clickable and more readable html text rather than drawn on canvas
 3. More items, levels, random events
 
