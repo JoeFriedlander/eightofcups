@@ -1,13 +1,24 @@
 # Eight of Cups 
 **by Joe Friedlander**
 
-Inspired by Alchemy from PopCap Games
+Pattern matching puzzle game inspired by Alchemy from PopCap Games
 
 **Play online here:**  https://joefriedlander.github.io/eightofcups (Music and sound off by default, can be enabled)
 
+### Screenshot:
+![Screenshot](demo/EightOfCupsGameplay.png)
+
+### Info:
+My first completed project.
+
+Todo:
+1. Refactor to use multiple files intead of one big one :slightly_smiling_face: Probably won't do as I'm not planning on updating it often
+2. Colorblind support, and display credits as clickable and more readable html text rather than drawn on canvas
+3. More items, levels, random events
+
 ### Attributions:
 
-Tarot card images from Rider-Waite tarot deck and are edited.
+Tarot card images from Rider-Waite-Smith tarot deck and are edited
 
 Tutorial theme: 'Curious Critters' by Matthew Pablo from
 https://opengameart.org/content/curious-critters
@@ -24,9 +35,4 @@ https://opengameart.org/content/epic-amulet-item
 under license https://creativecommons.org/licenses/by/3.0/
 Sound edited.
 
-Special thanks to Fernando Barrientos for human factors advice.
-
-### TODO:
-1. Colorblind support
-2. Menu screen text larger
-3. More levels, items, random events
+Special thanks to Fernando Barrientos for human factors advice
